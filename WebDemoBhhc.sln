@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Core", "WebDemoBhhc\src\CleanArchitecture.Core\CleanArchitecture.Core.csproj", "{845DC865-64FF-4E2A-8386-E26135A42541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "WebDemoBhhc\src\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{9DC9C12A-D5E9-4B3A-B775-073C927CCBD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Web", "WebDemoBhhc\src\CleanArchitecture.Web\CleanArchitecture.Web.csproj", "{59BEA388-FC3B-44E4-9C0D-57BCF590FF7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Tests", "WebDemoBhhc\tests\CleanArchitecture.Tests\CleanArchitecture.Tests.csproj", "{11529CFC-366D-4080-8040-A768C35DFA5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{845DC865-64FF-4E2A-8386-E26135A42541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845DC865-64FF-4E2A-8386-E26135A42541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845DC865-64FF-4E2A-8386-E26135A42541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845DC865-64FF-4E2A-8386-E26135A42541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC9C12A-D5E9-4B3A-B775-073C927CCBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC9C12A-D5E9-4B3A-B775-073C927CCBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC9C12A-D5E9-4B3A-B775-073C927CCBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC9C12A-D5E9-4B3A-B775-073C927CCBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BEA388-FC3B-44E4-9C0D-57BCF590FF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BEA388-FC3B-44E4-9C0D-57BCF590FF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BEA388-FC3B-44E4-9C0D-57BCF590FF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BEA388-FC3B-44E4-9C0D-57BCF590FF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11529CFC-366D-4080-8040-A768C35DFA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11529CFC-366D-4080-8040-A768C35DFA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11529CFC-366D-4080-8040-A768C35DFA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11529CFC-366D-4080-8040-A768C35DFA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F82297E-3AAB-46F0-ADF0-F6C8135DE7EA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://geomac.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebDemoBhhc\\src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj
+		SccProjectName1 = WebDemoBhhc/src/CleanArchitecture.Core
+		SccLocalPath1 = WebDemoBhhc\\src\\CleanArchitecture.Core
+		SccProjectUniqueName2 = WebDemoBhhc\\src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj
+		SccProjectName2 = WebDemoBhhc/src/CleanArchitecture.Infrastructure
+		SccLocalPath2 = WebDemoBhhc\\src\\CleanArchitecture.Infrastructure
+		SccProjectUniqueName3 = WebDemoBhhc\\src\\CleanArchitecture.Web\\CleanArchitecture.Web.csproj
+		SccProjectName3 = WebDemoBhhc/src/CleanArchitecture.Web
+		SccLocalPath3 = WebDemoBhhc\\src\\CleanArchitecture.Web
+		SccProjectUniqueName4 = WebDemoBhhc\\tests\\CleanArchitecture.Tests\\CleanArchitecture.Tests.csproj
+		SccProjectName4 = WebDemoBhhc/tests/CleanArchitecture.Tests
+		SccLocalPath4 = WebDemoBhhc\\tests\\CleanArchitecture.Tests
+	EndGlobalSection
+EndGlobal

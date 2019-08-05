@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Burkshire</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootswatch/cerulean/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootswatch/cerulean/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Maintenance" asp-action="Index">Maintenance</a></li>
+                    <li><a asp-area="" asp-controller="About" asp-action="Index">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div id="footer-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="~/images/bhhc_logo_white.jpg" alt="berkshire hathaway homestate companies logo"/>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <a asp-controller="Home" asp-action="Index">Home Page</a><br />
+                        <a asp-controller="Maintenance" asp-action="Index">Maintenance</a><br />
+                    </div>
+
+                    <div class="col-md-2">
+                        <a asp-controller="About" asp-action="Index">About</a><br />
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <a href="https://www.bhhc.com/" target="_blank">BHHC Website</a><br />
+                        <a a href="https://www.bhhc.com/careers.aspx" target="_blank">Careers</a>
+                    </div>
+
+                    <div class="col-md-2">
+                        <a href="https://www.bhhc.com/about/history.aspx" target="_blank">History</a><br />
+                        <a href="https://www.bhhc.com/workers-compensation.aspx" target="_blank">Workers Compensation</a><br />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+@await RenderSectionAsync("scripts", required: false).ConfigureAwait(false)
+</body>
+</html>
